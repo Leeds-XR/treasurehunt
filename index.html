@@ -11,16 +11,13 @@
 		<script src="treasurehunt.js"></script>
 	</head>
 	<body>
-		<a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;' id="scene">
-			<!-- define your gltf asset -->
-			<a-assets>
-			  <a-asset-item id="bird" src="origami.gltf"></a-asset-item>
-			</a-assets>
-			<!-- use your gltf model -->
-			
-			  
+		<a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;' id="scene">			  
 			<a-marker preset='hiro'>
-				<a-entity gltf-model="#bird"></a-entity>
+				<a-box position='0 0.5 0' material='color: green;'></a-box>
+			</a-marker>
+			
+			<a-marker preset='kanji'>
+			  <a-box position='0 0.5 0' material='color: red;'></a-box>
 			</a-marker>
 			
 			<a-entity camera></a-entity>
