@@ -17,9 +17,11 @@
 			  <a-asset-item id="bird" src="origami.gltf"></a-asset-item>
 			</a-assets>
 			<!-- use your gltf model -->
-			<a-entity gltf-model="##bird"></a-entity>
+			
 			  
-			<a-marker-camera preset='hiro'></a-marker-camera>
+			<a-marker-camera preset='hiro'>
+				<a-entity gltf-model="##bird"></a-entity>
+			</a-marker-camera>
 		</a-scene>
 	</body>
 </html>
