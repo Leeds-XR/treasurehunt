@@ -10,17 +10,8 @@
 		<script src="treasurehunt.js"></script>
 	</head>
 	<body>
-		<a-scene
-		  embedded
-		  background="color: #9bf2f1"
-		  id="scene"
-		>
-		 <a-text
-        value="This content will always face you."
-        look-at="[gps-camera]"
-        scale="120 120 120"
-        gps-entity-place="latitude: <add-your-latitude>; longitude: <add-your-longitude>;"
-      ></a-text>
+		<a-scene background="color: #9bf2f1" id="scene">
+			  <a-box color="red" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
 		</a-scene>
 	</body>
 </html>
